@@ -1,14 +1,19 @@
 // React
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 // Components
-import Root from './components/App';
-import configureStore from './store/configureStore';
-import initialState from './store/initialState';
+import App from './components/App';
+import configureStore from './configureStore';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const store = configureStore(initialState);
+  const store = configureStore();
 
   const root = document.getElementById('root');
-  ReactDOM.render(<Root store={store} />, root);
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    root
+  );
 });

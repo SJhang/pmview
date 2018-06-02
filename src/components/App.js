@@ -1,9 +1,24 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Header from "./Header";
+import Home from "./Home";
+import StoreInfo from "./StoreInfo";
+import StoreReview from "./StoreReview";
+// custom components
 
-function App() {
+const Root = () => {
   return (
-    <div>Hello World <br/> React Starter</div>
+    <BrowserRouter>
+      <React.Fragment>
+        <Header />
+        <Switch>
+          <Route component={Home} exact path="/" />
+          <Route component={StoreInfo} path="/store-info" />
+          <Route component={StoreReview} path="/store-review" />
+        </Switch>
+      </React.Fragment>
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+export default Root;
