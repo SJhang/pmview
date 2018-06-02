@@ -6,12 +6,15 @@ import Header from "./Header";
 import Home from "./Home";
 import CompanyInfo from "./CompanyInfo";
 import CompanyReview from "./CompanyReview";
+import Test from './Test';
 
 const Root = () => {
   return (
     <BrowserRouter>
       <React.Fragment>
         <Header />
+          <Test />
+
         <Container style={{marginTop: 7 + 'em'}}>
           <Switch>
             <Route component={Home} exact path="/" />
