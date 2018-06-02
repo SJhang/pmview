@@ -8,9 +8,9 @@ import {
 const MockDB = {
   companies: [{
       id: v4(),
-      name: '왕과비-여실장하지원',
+      name: '스타벅스 인계점',
       location: '경기도 수원시 팔달구 인계동',
-      hours: 'PM 07:00 ~ AM 05:00',
+      hours: 'AM 07:00 ~ PM 10:00',
       phone: '비공개',
       rating: '9.91',
       rank: '0',
@@ -22,9 +22,9 @@ const MockDB = {
     },
     {
       id: v4(),
-      name: '강남스타-탐',
+      name: '버거킹 논현점',
       location: '서울특별시 강남구 논현동',
-      hours: 'PM 06:00 ~ AM 06:00',
+      hours: 'AM 06:00 ~ PM 10:00',
       phone: '비공개',
       rating: '9.99',
       rank: '0',
@@ -36,9 +36,9 @@ const MockDB = {
     },
     {
       id: v4(),
-      name: '강남건마-모던',
+      name: '서브웨이 서초점',
       location: '서울특별시 서초구 서초동',
-      hours: 'AM 11:00 ~ AM 05:00',
+      hours: 'AM 11:00 ~ PM 09:00',
       phone: '비공개',
       rating: '9.68',
       rank: '',
@@ -50,9 +50,9 @@ const MockDB = {
     },
     {
       id: v4(),
-      name: '화곡건마-홍콩',
+      name: '맥도날드 화곡점',
       location: '서울특별시 강서구 화곡동',
-      hours: 'PM 06:00 ~ AM 06:00',
+      hours: 'AM 06:00 ~ PM 11:00',
       phone: '비공개',
       rating: '9.62',
       rank: '1',
