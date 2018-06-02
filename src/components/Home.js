@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>HOME!!</div>
+    <div style={{height: 3000 + 'px'}}>HOME!!</div>
   );
 }
 
