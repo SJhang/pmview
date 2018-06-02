@@ -3,3 +3,9 @@
 node_modules/
 
 dist/
+
+
+// firebase config
+.firebaserc
+database.rules.json
+firebase.json
