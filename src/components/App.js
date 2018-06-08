@@ -5,7 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import CompanyInfo from "./Company/CompanyInfo";
 import CompanyReview from "./CompanyReview";
-import {Login, Registration} from './Login';
+import {LoginForm, FindForm, RegistrationPage, RegistrationForm} from './Login';
 
 const Root = () => {
   return (
@@ -17,8 +17,10 @@ const Root = () => {
             <Route component={Home} exact path="/"/>
             <Route component={CompanyInfo} path="/company-info"/>
             <Route component={CompanyReview} path="/company-review"/>
-            <Route component={Login} path="/login"/>
-            <Route component={Registration} path="/register"/>
+            <Route component={LoginForm} path="/login"/>
+            <Route component={FindForm} path="/find"/>
+            <Route component={RegistrationPage} path="/register"/>
+            <Route component={RegistrationForm} path="/registration"/>
           </Switch>
         </Container>
       </React.Fragment>
