@@ -69,7 +69,7 @@ const delay = (ms) =>
   new Promise(resolve => setTimeout(resolve, ms));
 
 export const fetchCompanies = (filter) =>
-  delay(500).then(() => {
+  delay(100).then(() => {
     switch (filter) {
       case 'all':
         return MockDB.companies;

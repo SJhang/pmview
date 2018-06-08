@@ -3,7 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Container} from 'semantic-ui-react';
 import Header from "./Header";
 import Home from "./Home";
-import CompanyInfo from "./CompanyInfo";
+import CompanyInfo from "./Company/CompanyInfo";
 import CompanyReview from "./CompanyReview";
 import {Login, Registration} from './Login';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import CompanyCard from './CompanyCard';
-import * as Api from '../api';
+import * as Api from '../../api/index';
 import { Card } from 'semantic-ui-react';
 
 class CompanyInfo extends React.Component {
