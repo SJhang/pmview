@@ -1,7 +1,11 @@
-import Login from './Login';
-import Registration from './Registration';
+import LoginForm from './LoginForm';
+import FindForm from './FindForm'
+import RegistrationPage from './RegistrationPage';
+import RegistrationForm from './RegistrationForm';
 
 export {
-  Login,
-  Registration
+  LoginForm,
+  FindForm,
+  RegistrationPage,
+  RegistrationForm
 }
