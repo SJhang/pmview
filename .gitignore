@@ -29,4 +29,4 @@ firebase.json
 .idea
 
 # prod
-dist/
+/dist
