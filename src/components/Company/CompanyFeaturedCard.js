@@ -1,19 +1,18 @@
 import React from 'react';
-import { Card, Image, List, Label, Icon } from 'semantic-ui-react';
+import { Card, Image, List, Label, Icon, Segment, Header } from 'semantic-ui-react';
 
-function CompanyCard({companyName, location, image, likes, comments, officeHours, phoneNumber, rating, rank, views, tag}) {
+function CompanyFeaturedCard({companyName, location, image, likes, comments, officeHours, phoneNumber, rating, rank, views, tag, recommended, outstanding}) {
     return (
-        <Card raised>
+        <Segment raised>
             <Image
-                src={image}
-                size={"medium"}
-                centered
-                label={{ as: 'a', ribbon: 'right', color: 'red', icon: 'thumbs up', content: views }}
+                src={'/images/burgerking.png'}
+                size={'large'}
+                bordered
+                verticalAlign={'center'}
+                label={{ as: 'a', ribbon: true, color: 'red', icon: 'thumbs up', content: views }}
             />
-
-
+            {companyName}
             <Card.Content>
-                <Card.Header>{companyName}</Card.Header>
                 <Card.Meta>
                     <span className="location">{location}</span>
                 </Card.Meta>
@@ -62,8 +61,8 @@ function CompanyCard({companyName, location, image, likes, comments, officeHours
                 </Label>
             </Card.Content>
 
-        </Card>
+        </Segment>
     );
 }
 
-export default CompanyCard;
+export default CompanyFeaturedCard;
