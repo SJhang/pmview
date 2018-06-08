@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyCard from './CompanyCard.jsx';
+import CompanyCard from './CompanyCard';
 import * as Api from '../api';
 import { Card } from 'semantic-ui-react';
 

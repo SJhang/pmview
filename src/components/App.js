@@ -1,12 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Container} from 'semantic-ui-react';
-
 import Header from "./Header";
 import Home from "./Home";
 import CompanyInfo from "./CompanyInfo";
 import CompanyReview from "./CompanyReview";
-import Test from './Test';
 import {Login, Registration} from './Login';
 
 const Root = () => {
@@ -14,11 +12,7 @@ const Root = () => {
     <BrowserRouter>
       <React.Fragment>
         <Header/>
-        <Test/>
-
-        <Container style={{
-          marginTop: 7 + 'em'
-        }}>
+        <Container className="m-top-7">
           <Switch>
             <Route component={Home} exact path="/"/>
             <Route component={CompanyInfo} path="/company-info"/>
