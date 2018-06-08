@@ -15,7 +15,7 @@ const MockDB = {
       rating: '9.91',
       rank: '0',
       views: '205,021',
-      cardImage: '',
+      cardImage: '/public/images/mcdonald.png',
       mainImage: '',
       recommended: true,
       outstanding: true,

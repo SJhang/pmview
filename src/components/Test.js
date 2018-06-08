@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import * as api from '../api';
+import * as Api from '../api';
 
 class Test extends Component {
   constructor() {
     super();
   }
   componentDidMount() {
-    api
+    Api
       .fetchCompanies('top')
       .then(response => {
         console.log('mock api response', response);
